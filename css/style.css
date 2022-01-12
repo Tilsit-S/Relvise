@@ -35,10 +35,7 @@ body {
     color: #252b42;
     font-weight: 500;
     font-family: Montserrat;
-}
-.wrapper {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -48,10 +45,10 @@ body {
     margin: 0px auto;
     box-sizing: content-box;
 }
-._ibg {
+.ibg {
     position: relative;
 }
-._ibg img {
+.ibg img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -111,7 +108,6 @@ body {
 .menu__link:hover {
     text-decoration: underline;
 }
-
 /*---------------page--------------------*/
 .page {
     flex: 1 1 auto
@@ -123,9 +119,6 @@ body {
     z-index: 2;
     margin: -111px 0px 0px 0px;
 }
-.page__advantages {}
-.page__practice {}
-.page__whoweare {}
 .page__clients {
     margin: 0px 0px 10px 0px;
 }
@@ -148,24 +141,26 @@ body {
 .header-block__sub-title {
     line-height: 20px;
     color: #737373;
+    padding: 0 269px;
 }
-
 @media (max-width: 992px) {
     .header-block__title {
         font-size: 35px;
     }
 }
-
 @media (max-width: 767px) {
     .header-block__title {
         font-size: 30px;
     }
 }
-
 /*----------------------main-------------------------*/
 .main-block {
     position: relative;
 }
+.main-block::after {
+    
+}
+
 .main-block__body {
     padding: 184px 0px 191px 0px;
     position: relative;
@@ -247,6 +242,7 @@ body {
     color: #fff;
 }
 .main-block__image {
+    background: url(../img/main-block/cover.jpg);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -264,9 +260,6 @@ body {
     }
 }
 /*------------------services-----------------*/
-.services {
-}
-.services__container {}
 .services__body {
 }
 @media (min-width: 670px) {

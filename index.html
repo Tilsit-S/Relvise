@@ -8,9 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Relvise</title>
     </head>
-    <body>
-        <!-- Что за странный враппер над всем сайтом? -->
-        <div class="wrapper">
+    <body >
             <header class="header">
                 <div class="header__container container">
                     <a href="#" class="header__logo">
@@ -35,8 +33,7 @@
                 </div>
             </header>
             <main class="page">
-                <!-- Почему ниже используется div, когда семантически это такой же section как и ниже? -->
-                <div class="page__main-block main-block">
+                <section class="page__main-block main-block">
                     <div class="main-block__container container">
                         <div class="main-block__body">
                             <h1 class="main-block__title">
@@ -51,19 +48,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Что за решение с поместить фоновое изображение в разметку? Оно и есть ФОНОВОЕ и должно быть фоном. 
-                    И снова загадочный класс _ibg с нижним подчеркиванием -->
-                    <div class="main-block__image _ibg">
+                    <div class="main-block__image ibg">
                         <img src="img/main-block/cover.jpg" alt="cover">
                     </div>
-                </div>
-                <!-- ИБЫТОЧНАЯ ВЛОЖЕННОСТЬ + отсутсвие семантики. 
-                    Должно быть как-то так:
-                    section
-                        ul
-                            li
-                                content
-                -->
+                </section>
                 <section class="page__services services">
                     <div class="services__container container">
                         <div class="services__body">
@@ -97,21 +85,14 @@
                         </div>
                     </div>
                 </section>
-                
                 <section class="page__advantages advantages">
                     <div class="advantages__container container">
                         <div class="advantages__header header-block">
                             <h2 class="header-block__title">Designing Better Experience</h2>
                             <div class="header-block__sub-title">
-                                <!-- Убери везде и не используй теги br и hr -->
-                                Problems trying to resolve the conflict between the two major realms <br>of Classical physics: Newtonian mechanics
+                                Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
                             </div>
                         </div>
-                        <!-- Снова большое количество лишних прокладок и нет семантики, я бы сделал так
-                        ul
-                            li
-                                content
-                        -->
                         <div class="advantages__body">
                             <div class="advantages__column">
                                 <div class="advantages__item">
@@ -152,16 +133,14 @@
                         </div>
                     </div>
                 </section>
-                <section class="page__practice practice">
-                    <!--  -->
-                    <div class="practice__container container">
-                        <div class="practice__header header-block">
+                <section class="page__practice practice container">
+                    <div class="practice__header header-block">
                             <h2 class="header-block__title">Practice Advice</h2>
                             <div class="header-block__sub-title">
-                                Problems trying to resolve the conflict between <br>the two major realms of Classical physics: Newtonian mechanics
+                                Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
                             </div>
-                        </div>
-                        <div class="practice__body">
+                    </div>
+                    <div class="practice__body">
                             <div class="practice__column">
                                 <article class="practice__item item-practice">
                                     <div class="item-practice__content">
@@ -172,7 +151,7 @@
                                             Newton thought that light was made up of particles, but then it was discovered
                                         </div>
                                     </div>
-                                    <a href="#" class="item-practice__image _ibg">
+                                    <a href="#" class="item-practice__image ibg">
                                         <img src="img/practice/01.jpg" alt="A single source of truth">
                                     </a>
                                 </article>
@@ -187,7 +166,7 @@
                                             “Quantum mechanics” is the description of the behaviour of matter
                                         </div>
                                     </div>
-                                    <a href="#" class="item-practice__image _ibg">
+                                    <a href="#" class="item-practice__image ibg">
                                         <img src="img/practice/02.jpg" alt="Fastest way to organize">
                                     </a>
                                 </article>
@@ -202,7 +181,7 @@
                                             They describe a universe consisting of bodies moving
                                         </div>
                                     </div>
-                                    <a href="#" class="item-practice__image _ibg">
+                                    <a href="#" class="item-practice__image ibg">
                                         <img src="img/practice/03.jpg" alt="Fastest way to take action">
                                     </a>
                                 </article>
@@ -217,25 +196,24 @@
                                             They finally obtained a consistent description of the behaviour
                                         </div>
                                     </div>
-                                    <a href="#" class="item-practice__image _ibg">
+                                    <a href="#" class="item-practice__image ibg">
                                         <img src="img/practice/04.jpg" alt="Work better together">
                                     </a>
                                 </article>
                             </div>
-                        </div>
                     </div>
                 </section>
-                <section class="page__whoweare whoweare">
-                    <div class="whoweare__container container">
+                <section class="page__whoweare whoweare container">
+                    <div class="whoweare__container ">
                         <div class="whoweare__header header-block">
                             <h2 class="header-block__title">Who We Are</h2>
                             <div class="header-block__sub-title">
-                                Problems trying to resolve the conflict between the two major realms <br>of Classical physics: Newtonian mechanics
+                                Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
                             </div>
                         </div>
                         <div class="whoweare__body">
                             <div class="whoweare__video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yJcCKuxfb2o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MkgR0SxmMKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="whoweare__content">
                                 <div class="whoweare__top">
@@ -473,7 +451,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
         <script src="js/script.js"></script>
     </body>
 </html>
